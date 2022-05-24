@@ -10,14 +10,16 @@ function generatePassword() {
   var special = "#$%&()*+,-./:;<=>?";
   var uppercase = lowercase.toUpperCase();
 
-  // Added a new var to concat above strings
+  // Added a new var to concat strings above
   var allCharacters = '';
 
   var inputLength = parseInt(prompt("Choose a lenght between 8 and 128"));
 
   while (inputLength < 8 || inputLength > 128) {
     // GOOD CODE GOES HERE
+    // Changed text in alert
     alert('Password must be between 8 and 128 characters long');
+    //loop back to first prompt
     inputLength = parseInt(prompt("Choose a lenght between 8 and 128"));
   }
 
@@ -27,8 +29,6 @@ function generatePassword() {
   var wantsSpecial = confirm('Would you like special characters?');
   var wantsUpper = confirm('Would you like uppercase letters?');
 
-
- 
 
 
   // if confirms are true add the proper letters, numbers or special characters to the allCharacters var
@@ -45,13 +45,13 @@ function generatePassword() {
     allCharacters += uppercase
   }
   
-   //while loop create to make sure user chooses at least one type
-  if (wantsLower === false && wantsNumbers === false && wantsSpecial === false && wantsUpper === false){
+   // while loop create to make sure user chooses at least one type
+  while (wantsLower === false && wantsNumbers === false && wantsSpecial === false && wantsUpper === false){
     alert ("Please choose at least one character type");
     generatePassword();
   }
 
-  // once you have the allcharacters var, you want to loop through it for the amount of times that you inputLength is and set the password var equal to a random character in the allcharacters var
+  // for loop to return the inputLength and set the password var equal to a random character in the allcharacters var
 for (var i = 0; i < inputLength; i++) {
   password += allCharacters.charAt(Math.floor(Math.random() * allCharacters.length))
 }
