@@ -8,9 +8,11 @@
 3. [Visuals](#visuals)
 4. [Resources](#resources)
 
+
 ## Description
 
 JavaScrypt file was modified to allow an application to generate random passwords based on criteria outlined in the file.
+
 
 ## Usage
 
@@ -35,7 +37,14 @@ function generatePassword() {
   var allCharacters = '';
 ```
 
-Visuals
+- A while loop was created to give user the choice of lenght of characters.
+An alert was set for users who do not chose an allowed number of characters.
+
+```js
+    alert('Password must be between 8 and 128 characters long');
+```
+
+## Visuals
 Horiseon full page
 
 ## Resources
