@@ -44,17 +44,17 @@ function generatePassword() {
   if (wantsUpper) {
     allCharacters += uppercase
   }
-  
-   // while loop create to make sure user chooses at least one type
-  while (wantsLower === false && wantsNumbers === false && wantsSpecial === false && wantsUpper === false){
-    alert ("Please choose at least one character type");
+
+  // while loop create to make sure user chooses at least one type
+  while (wantsLower === false && wantsNumbers === false && wantsSpecial === false && wantsUpper === false) {
+    alert("Please choose at least one character type");
     generatePassword();
   }
 
   // for loop to return the inputLength and set the password var equal to a random character in the allcharacters var
-for (var i = 0; i < inputLength; i++) {
-  password += allCharacters.charAt(Math.floor(Math.random() * allCharacters.length))
-}
+  for (var i = 0; i < inputLength; i++) {
+    password += allCharacters.charAt(Math.floor(Math.random() * allCharacters.length))
+  }
 
   return password;
 }
