@@ -1,4 +1,4 @@
-# module03-challenge
+# Module03-Challenge
 
 ## Table of Contents
 
@@ -9,14 +9,32 @@
 4. [Resources](#resources)
 
 ## Description
-Website was modified to be more user friendly. Changes were done to both the html and the css file to format accordingly and make both files look cleaner.
+
+JavaScrypt file was modified to allow an application to generate random passwords based on criteria outlined in the file.
 
 ## Usage
-In Header, the Search Engine Optimization button was not workking. Hearder An id was added to code to fix problem
-<article id="search-engine-optimization"
-In the index.html file all 'div' were replace by html tags. Comments were added to each change for description.
-An alt description was added to every image in index.html
-The CSS file contained repeated lines of code on .benefit classes. Classes were removed and repeated lines were deleted making the css file more concise.
+
+- User was giving the choice of characters that are allowed in the password to be generated.
+  Teacher instructed with the start of the function
+
+```js
+// Instructor Provided Template: Anthony Cooper
+function generatePassword() {
+  var password = '';
+
+  var lowercase = "abcdefghijklmnopqrstuvwxyz";
+  var numbers = "0123456789";
+  var special = "#$%&()*+,-./:;<=>?";
+  var uppercase = lowercase.toUpperCase(); 
+```
+
+- In line 14 a new var was added to call the concatenation of all possible characters
+
+```js
+ // Added a new var to concat strings above
+  var allCharacters = '';
+```
+
 Visuals
 Horiseon full page
 
