@@ -66,5 +66,5 @@ while (wantsLower === false && wantsNumbers === false && wantsSpecial === false 
 
 
 ## Resources
-Repository
-Live Site
+- [Repository](https://github.com/alicessilva22/module03-challenge)
+- [Live Site](https://alicessilva22.github.io/module03-challenge/)
