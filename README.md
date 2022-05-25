@@ -44,8 +44,26 @@ An alert was set for users who do not chose an allowed number of characters.
     alert('Password must be between 8 and 128 characters long');
 ```
 
+- Another while loop was create to make sure user chooses at least one type of character.
+```js
+while (wantsLower === false && wantsNumbers === false && wantsSpecial === false && wantsUpper === false) {
+    alert("Please choose at least one character type");
+    generatePassword();
+  }
+```
+
+- For loop was added to match the number of characters chosen to the lenght of the password being generated.
+
+```js
+  for (var i = 0; i < inputLength; i++) {
+    password += allCharacters.charAt(Math.floor(Math.random() * allCharacters.length))
+  }
+```
+
+
 ## Visuals
-Horiseon full page
+![Password-Generator full page](./assets/images/Password-Generator.png)
+
 
 ## Resources
 Repository
