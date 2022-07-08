@@ -20,7 +20,6 @@ JavaScrypt file was modified to allow an application to generate random password
   Teacher instructed with the start of the function
 
 ```js
-// Instructor Provided Template: Anthony Cooper
 function generatePassword() {
   var password = '';
 
@@ -67,4 +66,4 @@ while (wantsLower === false && wantsNumbers === false && wantsSpecial === false 
 
 ## Resources
 - [Repository](https://github.com/alicessilva22/module03-challenge)
-- [Live Site](https://alicessilva22.github.io/module03-challenge/)
+- [Live Site](https://alicessilva22.github.io/Password-Generator/)
